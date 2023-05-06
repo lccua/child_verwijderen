@@ -8,10 +8,11 @@ const setup = () => {
 }
 
 const deleteListItem = (event) => {
-    let gallery = document.querySelector("#lstIngredients");
+
 
     let listItem = event.target;
-    gallery.removeChild(listItem);
+    let list = listItem.parentNode;
+    list.removeChild(listItem);
 }
 
 window.addEventListener('load', setup);
